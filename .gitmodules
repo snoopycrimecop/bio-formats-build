@@ -18,3 +18,7 @@
 	path = ome-jai
 	url = https://github.com/ome/ome-jai.git
 	branch = master
+[submodule "ome-codecs"]
+	path = ome-codecs
+	url = https://github.com/ome/ome-codecs.git
+	branch = master
