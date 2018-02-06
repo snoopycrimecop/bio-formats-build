@@ -22,3 +22,11 @@
 	path = ome-codecs
 	url = https://github.com/ome/ome-codecs.git
 	branch = master
+[submodule "ome-metakit"]
+	path = ome-metakit
+	url = https://github.com/ome/ome-metakit.git
+	branch = master
+[submodule "ome-stubs"]
+	path = ome-stubs
+	url = https://github.com/ome/ome-stubs.git
+	branch = master
