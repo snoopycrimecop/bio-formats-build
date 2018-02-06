@@ -6,3 +6,7 @@
 	path = ome-model
 	url = https://github.com/ome/ome-model.git
 	branch = master
+[submodule "ome-poi"]
+	path = ome-poi
+	url = https://github.com/ome/ome-poi.git
+	branch = master
