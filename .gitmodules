@@ -2,3 +2,7 @@
 	path = ome-common-java
 	url = https://github.com/ome/ome-common-java.git
 	branch = master
+[submodule "ome-model"]
+	path = ome-model
+	url = https://github.com/ome/ome-model.git
+	branch = master
