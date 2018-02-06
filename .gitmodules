@@ -38,3 +38,7 @@
 	path = bio-formats-bundles
 	url = https://github.com/ome/bio-formats-bundles.git
 	branch = master
+[submodule "bio-formats-test"]
+	path = bio-formats-test
+	url = https://github.com/ome/bio-formats-test.git
+	branch = master
