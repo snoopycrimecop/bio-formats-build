@@ -54,3 +54,7 @@
 	path = bio-formats-autogen
 	url = https://github.com/ome/bio-formats-autogen.git
 	branch = master
+[submodule "bio-formats-documentation"]
+	path = bio-formats-documentation
+	url = https://github.com/ome/bio-formats-documentation.git
+	branch = master
