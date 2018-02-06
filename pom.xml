@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+    http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>ome</groupId>
+  <artifactId>bio-formats-build</artifactId>
+  <version>5.8.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Bio-Formats top-level build</name>
+  <description>Top-level build for all Bio-Formats components</description>
+  <url>https://www.openmicroscopy.org/bio-formats</url>
+  <inceptionYear>2018</inceptionYear>
+
+  <modules>
+    <module>ome-common-java</module>
+    <module>ome-model</module>
+    <module>ome-poi</module>
+    <module>ome-mdbtools</module>
+    <module>ome-jai</module>
+    <module>ome-codecs</module>
+    <module>ome-stubs</module>
+    <module>ome-metakit</module>
+    <module>bioformats</module>
+    <!-- <module>bio-formats-bundles</module> -->
+    <!-- <module>bio-formats-matlab</module> -->
+    <!-- <module>bio-formats-imagej</module> -->
+    <!-- <module>bio-formats-autogen</module> -->
+    <!-- <module>bio-formats-documentation</module> -->
+    <!-- <module>bio-formats-test</module> -->
+  </modules>
+
+  <build>
+    <!-- It is nice for "mvn" with no arguments to do something reasonable. -->
+    <defaultGoal>install</defaultGoal>
+
+    <plugins>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>3.0.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.8.2</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.5.2</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.7</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <prerequisites>
+    <maven>3.0.5</maven>
+  </prerequisites>
+
+  <organization>
+    <name>Open Microscopy Environment</name>
+    <url>http://www.openmicroscopy.org/</url>
+  </organization>
+
+  <issueManagement>
+    <system>Trac</system>
+    <url>https://trac.openmicroscopy.org/ome</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://ci.openmicroscopy.org/</url>
+  </ciManagement>
+
+  <mailingLists>
+    <mailingList>
+      <name>OME-users</name>
+      <subscribe>http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/</subscribe>
+      <unsubscribe>http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/</unsubscribe>
+      <post>ome-users@lists.openmicroscopy.org.uk</post>
+      <archive>http://lists.openmicroscopy.org.uk/pipermail/ome-users/</archive>
+    </mailingList>
+    <mailingList>
+      <name>OME-devel</name>
+      <subscribe>http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/</subscribe>
+      <unsubscribe>http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/</unsubscribe>
+      <post>ome-devel@lists.openmicroscopy.org.uk</post>
+      <archive>http://lists.openmicroscopy.org.uk/pipermail/ome-devel/</archive>
+    </mailingList>
+  </mailingLists>
+
+  <scm>
+    <connection>scm:git:git://github.com/ome/bio-formats-build</connection>
+    <developerConnection>scm:git:git@github.com:ome/bio-formats-build</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/ome/bio-formats-build</url>
+  </scm>
+
+</project>
