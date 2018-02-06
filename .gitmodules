@@ -10,3 +10,7 @@
 	path = ome-poi
 	url = https://github.com/ome/ome-poi.git
 	branch = master
+[submodule "ome-mdbtools"]
+	path = ome-mdbtools
+	url = https://github.com/ome/ome-mdbtools.git
+	branch = master
