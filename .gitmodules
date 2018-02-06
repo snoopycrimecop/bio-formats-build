@@ -46,3 +46,7 @@
 	path = bio-formats-matlab
 	url = https://github.com/ome/bio-formats-matlab.git
 	branch = master
+[submodule "bio-formats-imagej"]
+	path = bio-formats-imagej
+	url = https://github.com/ome/bio-formats-imagej.git
+	branch = master
