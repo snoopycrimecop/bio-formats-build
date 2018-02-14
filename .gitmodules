@@ -50,10 +50,6 @@
 	path = bio-formats-imagej
 	url = https://github.com/ome/bio-formats-imagej.git
 	branch = master
-[submodule "bio-formats-autogen"]
-	path = bio-formats-autogen
-	url = https://github.com/ome/bio-formats-autogen.git
-	branch = master
 [submodule "bio-formats-documentation"]
 	path = bio-formats-documentation
 	url = https://github.com/ome/bio-formats-documentation.git
