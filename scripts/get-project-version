@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+get_maven_property() {
+  mvn org.apache.maven.plugins:maven-help-plugin:2.2:evaluate -Dexpression=$1 | grep -v '^\[' | tail -n1
+}
+
+name=$(get_maven_property project.artifactId)
+version=$(get_maven_property project.version)
+
+echo $name=$version

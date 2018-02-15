@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -e
+
+projectversions=$(git submodule --quiet foreach get-project-version)
+
+echo $projectversions
+
+for projectversion in $projectversions
+do
+	project=$(echo $projectversion | cut -d= -f1)
+	version=$(echo $projectversion | cut -d= -f2)
+
+	match="<$project.version>.*</$project.version>"
+	replace="<$project.version>$version</$project.version>"
+	re="s;$match;$replace;;"
+
+	sedoptions="$sedoptions -e '$re'"
+done
+
+for pom in */pom.xml
+do
+	eval sed $sedoptions -i.old "$pom"
+	rm -f $pom.old
+done
