@@ -6,7 +6,21 @@ get_maven_property() {
   mvn org.apache.maven.plugins:maven-help-plugin:2.2:evaluate -Dexpression=$1 | grep -v '^\[' | tail -n1
 }
 
-name=$(get_maven_property project.artifactId)
-version=$(get_maven_property project.version)
+get_version() {
+  (
+    cd $1
+    name=$(get_maven_property project.artifactId)
+    version=$(get_maven_property project.version)
 
-echo $name=$version
+    echo $name=$version
+
+    # Special-cases
+    if [ "$name" = "pom-bio-formats" ]; then
+      echo "bioformats=$version"
+    fi
+  )
+}
+
+find . -type f -name pom.xml | while read pom; do
+  get_version "$(dirname $pom)"
+done
