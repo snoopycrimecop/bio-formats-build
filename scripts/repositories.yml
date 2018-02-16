@@ -1,0 +1,50 @@
+base-branch: master
+
+submodules:
+  ome-common-java:
+    base-branch: master
+
+  bioformats:
+    base-branch: develop
+    
+  bio-formats-autogen:
+    base-branch: master
+    
+  bio-formats-bundles:
+    base-branch: master
+    
+  bio-formats-documentation:
+    base-branch: master
+    
+  bio-formats-imagej:
+    base-branch: master
+    
+  bio-formats-matlab:
+    base-branch: master
+    
+  bio-formats-test:
+    base-branch: master
+    
+  ome-codecs:
+    base-branch: master
+    
+  ome-common-java:
+    base-branch: master
+    
+  ome-jai:
+    base-branch: master
+    
+  ome-mdbtools:
+    base-branch: master
+    
+  ome-metakit:
+    base-branch: master
+    
+  ome-model:
+    base-branch: master
+    
+  ome-poi:
+    base-branch: master
+    
+  ome-stubs:
+    base-branch: master
