@@ -5,7 +5,7 @@ submodules:
     base-branch: master
 
   bioformats:
-    base-branch: develop
+    base-branch: east
     
   bio-formats-autogen:
     base-branch: master
