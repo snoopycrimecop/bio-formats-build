@@ -25,9 +25,9 @@
     <module>ome-stubs</module>
     <module>ome-metakit</module>
     <module>bioformats</module>
-    <!-- <module>bio-formats-bundles</module> -->
+    <module>bio-formats-bundles</module>
     <!-- <module>bio-formats-matlab</module> -->
-    <!-- <module>bio-formats-imagej</module> -->
+    <module>bio-formats-imagej</module>
     <!-- <module>bio-formats-autogen</module> -->
     <!-- <module>bio-formats-documentation</module> -->
     <!-- <module>bio-formats-test</module> -->
