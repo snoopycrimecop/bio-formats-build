@@ -29,7 +29,7 @@
     <!-- <module>bio-formats-matlab</module> -->
     <module>bio-formats-imagej</module>
     <module>bio-formats-documentation</module>
-    <!-- <module>bio-formats-test</module> -->
+    <module>bio-formats-test</module>
   </modules>
 
   <build>
