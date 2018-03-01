@@ -48,3 +48,6 @@ submodules:
     
   ome-stubs:
     base-branch: master
+
+  ome-turbojpeg:
+    base-branch: master
