@@ -54,3 +54,7 @@
 	path = bio-formats-documentation
 	url = https://github.com/ome/bio-formats-documentation.git
 	branch = master
+[submodule "ome-turbojpeg"]
+	path = ome-turbojpeg
+	url = https://github.com/ome/ome-turbojpeg.git
+	branch = master

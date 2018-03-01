@@ -24,6 +24,7 @@
     <module>ome-codecs</module>
     <module>ome-stubs</module>
     <module>ome-metakit</module>
+    <module>ome-turbojpeg</module>
     <module>bioformats</module>
     <module>bio-formats-bundles</module>
     <!-- <module>bio-formats-matlab</module> -->
