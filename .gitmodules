@@ -33,7 +33,7 @@
 [submodule "bioformats"]
 	path = bioformats
 	url = https://github.com/openmicroscopy/bioformats.git
-	branch = develop
+	branch = east
 [submodule "bio-formats-bundles"]
 	path = bio-formats-bundles
 	url = https://github.com/ome/bio-formats-bundles.git
