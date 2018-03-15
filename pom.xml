@@ -26,6 +26,7 @@
     <module>ome-metakit</module>
     <module>ome-turbojpeg</module>
     <module>bioformats</module>
+    <module>bio-formats-examples</module>
     <module>bio-formats-bundles</module>
     <module>bio-formats-matlab</module>
     <module>bio-formats-imagej</module>
