@@ -15,6 +15,9 @@ submodules:
     
   bio-formats-documentation:
     base-branch: master
+
+  bio-formats-examples:
+    base-branch: master
     
   bio-formats-imagej:
     base-branch: master
