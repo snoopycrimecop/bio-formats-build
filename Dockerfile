@@ -31,4 +31,4 @@ RUN ant clean jars tools test
 ENV TZ "Europe/London"
 
 WORKDIR /bio-formats-build/bioformats/components/test-suite
-ENTRYPOINT ["/usr/bin/ant", "test-automated", "-Dtestng.directory=/opt/data", "-Dtestng.configDirectory=/opt/config"]
+ENTRYPOINT ["/usr/bin/ant", "test-automated", "-Dtestng.directory=/data", "-Dtestng.configDirectory=/config"]
