@@ -1,11 +1,12 @@
-From ubuntu:latest
+FROM ubuntu:latest
 MAINTAINER ome-devel@lists.openmicroscopy.org.uk
 
-RUN apt-get -q update
-RUN apt-get -qy install openjdk-8-jdk
-RUN apt-get -qy install maven ant git
-RUN apt-get -qy install python-sphinx
-RUN apt-get -qy install locales
+RUN apt-get -q update && apt-get -qy install openjdk-8-jdk \
+  maven \
+  ant \
+  git \
+  python-sphinx \
+  locales
 
 RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && \
     dpkg-reconfigure --frontend=noninteractive locales && \
@@ -21,12 +22,8 @@ RUN chown -R bf /bio-formats-build
 USER bf
 WORKDIR /bio-formats-build
 RUN git submodule update --init
-
-USER bf
-WORKDIR /bio-formats-build
 RUN mvn clean install -DskipSphinxTests
 
-USER bf
 WORKDIR /bio-formats-build/bioformats
 RUN ant clean jars tools test
 
