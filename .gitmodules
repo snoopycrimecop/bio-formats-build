@@ -33,30 +33,10 @@
 [submodule "bioformats"]
 	path = bioformats
 	url = https://github.com/openmicroscopy/bioformats.git
-	branch = east
-[submodule "bio-formats-bundles"]
-	path = bio-formats-bundles
-	url = https://github.com/ome/bio-formats-bundles.git
-	branch = master
-[submodule "bio-formats-test"]
-	path = bio-formats-test
-	url = https://github.com/ome/bio-formats-test.git
-	branch = master
-[submodule "bio-formats-matlab"]
-	path = bio-formats-matlab
-	url = https://github.com/ome/bio-formats-matlab.git
-	branch = master
-[submodule "bio-formats-imagej"]
-	path = bio-formats-imagej
-	url = https://github.com/ome/bio-formats-imagej.git
-	branch = master
+	branch = develop
 [submodule "bio-formats-documentation"]
 	path = bio-formats-documentation
 	url = https://github.com/ome/bio-formats-documentation.git
-	branch = master
-[submodule "ome-turbojpeg"]
-	path = ome-turbojpeg
-	url = https://github.com/ome/ome-turbojpeg.git
 	branch = master
 [submodule "bio-formats-examples"]
 	path = bio-formats-examples
