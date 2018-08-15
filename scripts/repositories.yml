@@ -5,27 +5,12 @@ submodules:
     base-branch: master
 
   bioformats:
-    base-branch: east
-    
-  bio-formats-autogen:
-    base-branch: master
-    
-  bio-formats-bundles:
-    base-branch: master
+    base-branch: develop
     
   bio-formats-documentation:
     base-branch: master
 
   bio-formats-examples:
-    base-branch: master
-    
-  bio-formats-imagej:
-    base-branch: master
-    
-  bio-formats-matlab:
-    base-branch: master
-    
-  bio-formats-test:
     base-branch: master
     
   ome-codecs:
@@ -50,7 +35,4 @@ submodules:
     base-branch: master
     
   ome-stubs:
-    base-branch: master
-
-  ome-turbojpeg:
     base-branch: master
