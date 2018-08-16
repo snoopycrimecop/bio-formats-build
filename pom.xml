@@ -26,7 +26,6 @@
     <module>ome-metakit</module>
     <module>bioformats</module>
     <module>bio-formats-examples</module>
-    <module>bio-formats-matlab</module>
     <module>bio-formats-documentation</module>
   </modules>
 
