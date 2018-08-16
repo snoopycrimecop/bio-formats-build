@@ -7,7 +7,7 @@
 
   <groupId>ome</groupId>
   <artifactId>bio-formats-build</artifactId>
-  <version>5.8.0-SNAPSHOT</version>
+  <version>5.9.2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Bio-Formats top-level build</name>
@@ -24,14 +24,10 @@
     <module>ome-codecs</module>
     <module>ome-stubs</module>
     <module>ome-metakit</module>
-    <module>ome-turbojpeg</module>
     <module>bioformats</module>
     <module>bio-formats-examples</module>
-    <module>bio-formats-bundles</module>
     <module>bio-formats-matlab</module>
-    <module>bio-formats-imagej</module>
     <module>bio-formats-documentation</module>
-    <module>bio-formats-test</module>
   </modules>
 
   <build>
