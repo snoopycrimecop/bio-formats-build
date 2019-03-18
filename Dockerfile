@@ -21,8 +21,6 @@ RUN mvn clean install -DskipSphinxTests -Dsurefire.useSystemClassLoader=false
 WORKDIR /bio-formats-build/bioformats
 RUN ant clean jars tools test
 
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US.en
 ENV TZ "Europe/London"
 
 WORKDIR /bio-formats-build/bioformats/components/test-suite
