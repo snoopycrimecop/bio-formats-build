@@ -32,8 +32,8 @@
 	branch = master
 [submodule "bioformats"]
 	path = bioformats
-	url = https://github.com/openmicroscopy/bioformats.git
-	branch = develop
+	url = https://github.com/IDR/bioformats.git
+	branch = master
 [submodule "bio-formats-documentation"]
 	path = bio-formats-documentation
 	url = https://github.com/ome/bio-formats-documentation.git
