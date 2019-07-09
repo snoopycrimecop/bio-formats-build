@@ -8,8 +8,8 @@ cache:
   - $HOME/.m2
 
 jdk:
-  - oraclejdk11
-  - oraclejdk8
+  - openjdk11
+  - openjdk8
 
 matrix:
   fast_finish: true
