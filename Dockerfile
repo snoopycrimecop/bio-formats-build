@@ -16,7 +16,7 @@ COPY --chown=1000:1000 . /bio-formats-build
 USER 1000
 WORKDIR /bio-formats-build
 RUN git submodule update --init
-RUN mvn clean install -DskipSphinxTests -Dsurefire.useSystemClassLoader=false
+RUN mvn clean install -DskipSphinxTests
 
 WORKDIR /bio-formats-build/bioformats
 RUN ant clean jars tools test
