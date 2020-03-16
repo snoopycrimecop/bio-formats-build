@@ -8,7 +8,7 @@ USER root
 RUN apt-get -q update && apt-get -qy install maven \
    ant \
    git \
-   python-sphinx
+   python3-venv
 
 RUN id 1000 || useradd -u 1000 -ms /bin/bash build
 COPY --chown=1000:1000 . /bio-formats-build
@@ -16,6 +16,11 @@ COPY --chown=1000:1000 . /bio-formats-build
 USER 1000
 WORKDIR /bio-formats-build
 RUN git submodule update --init
+
+RUN python3 -m venv /bio-formats-build/venv
+ENV PATH="/bio-formats-build/venv/bin:$PATH"
+RUN pip install -r ome-model/requirements.txt
+
 RUN mvn clean install -DskipSphinxTests
 
 WORKDIR /bio-formats-build/bioformats
