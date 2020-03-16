@@ -24,7 +24,7 @@ RUN pip install -r ome-model/requirements.txt
 RUN mvn clean install -DskipSphinxTests
 
 WORKDIR /bio-formats-build/bioformats
-RUN ant clean jars tools test
+RUN ant jars tools
 
 ENV TZ "Europe/London"
 
