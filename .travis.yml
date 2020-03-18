@@ -1,22 +1,12 @@
-language: java
+---
+language: python
+sudo: required
+services:
+  - docker
 
-sudo: false
-
-# http://docs.travis-ci.com/user/caching/#Arbitrary-directories
-cache:
-  directories:
-  - $HOME/.m2
-
-jdk:
-  - openjdk11
-  - openjdk8
-
-matrix:
-  fast_finish: true
-
-before_install:
-  - git submodule update --remote
-  - pip install --user -r ome-model/requirements.txt
+env:
+  - BUILD_IMAGE=openjdk:8
+  - BUILD_IMAGE=openjdk:11
 
 script:
-  - mvn install -DskipSphinxTests=true
+  - docker build -t bio-formats-build .
