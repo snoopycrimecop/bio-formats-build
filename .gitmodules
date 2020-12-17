@@ -1,44 +1,44 @@
 [submodule "ome-common-java"]
 	path = ome-common-java
-	url = https://github.com/ome/ome-common-java.git
-	branch = master
+	url = https://github.com/snoopycrimecop/ome-common-java.git
+	branch = merge_ci
 [submodule "ome-model"]
 	path = ome-model
-	url = https://github.com/ome/ome-model.git
-	branch = master
+	url = https://github.com/snoopycrimecop/ome-model.git
+	branch = merge_ci
 [submodule "ome-poi"]
 	path = ome-poi
-	url = https://github.com/ome/ome-poi.git
-	branch = master
+	url = https://github.com/snoopycrimecop/ome-poi.git
+	branch = merge_ci
 [submodule "ome-mdbtools"]
 	path = ome-mdbtools
-	url = https://github.com/ome/ome-mdbtools.git
-	branch = master
+	url = https://github.com/snoopycrimecop/ome-mdbtools.git
+	branch = merge_ci
 [submodule "ome-jai"]
 	path = ome-jai
-	url = https://github.com/ome/ome-jai.git
-	branch = master
+	url = https://github.com/snoopycrimecop/ome-jai.git
+	branch = merge_ci
 [submodule "ome-codecs"]
 	path = ome-codecs
-	url = https://github.com/ome/ome-codecs.git
-	branch = master
+	url = https://github.com/snoopycrimecop/ome-codecs.git
+	branch = merge_ci
 [submodule "ome-metakit"]
 	path = ome-metakit
-	url = https://github.com/ome/ome-metakit.git
-	branch = master
+	url = https://github.com/snoopycrimecop/ome-metakit.git
+	branch = merge_ci
 [submodule "ome-stubs"]
 	path = ome-stubs
-	url = https://github.com/ome/ome-stubs.git
-	branch = master
+	url = https://github.com/snoopycrimecop/ome-stubs.git
+	branch = merge_ci
 [submodule "bioformats"]
 	path = bioformats
-	url = https://github.com/openmicroscopy/bioformats.git
-	branch = develop
+	url = https://github.com/snoopycrimecop/bioformats.git
+	branch = merge_ci
 [submodule "bio-formats-documentation"]
 	path = bio-formats-documentation
-	url = https://github.com/ome/bio-formats-documentation.git
-	branch = master
+	url = https://github.com/snoopycrimecop/bio-formats-documentation.git
+	branch = merge_ci
 [submodule "bio-formats-examples"]
 	path = bio-formats-examples
-	url = https://github.com/ome/bio-formats-examples.git
-	branch = master
+	url = https://github.com/snoopycrimecop/bio-formats-examples.git
+	branch = merge_ci
