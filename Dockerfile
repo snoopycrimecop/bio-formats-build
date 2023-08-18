@@ -19,6 +19,7 @@ RUN git submodule update --init
 
 RUN python3 -m venv /bio-formats-build/venv
 ENV PATH="/bio-formats-build/venv/bin:$PATH"
+RUN pip install -r bio-formats-documentation/requirements.txt
 RUN pip install -r ome-model/requirements.txt
 
 RUN mvn clean install -DskipSphinxTests
