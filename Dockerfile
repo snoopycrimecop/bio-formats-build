@@ -5,13 +5,15 @@ LABEL maintainer="ome-devel@lists.openmicroscopy.org.uk"
 
 USER root
 
+USER root
+
 RUN printf '%s\n' \
-    'deb http://snapshot.debian.org/archive/debian/20260419T000000Z bullseye main' \
-    'deb http://snapshot.debian.org/archive/debian-security/20260419T000000Z bullseye-security main' \
-    'deb http://snapshot.debian.org/archive/debian/20260419T000000Z bullseye-updates main' \
+    'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260419T000000Z bullseye main' \
+    'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260419T000000Z bullseye-security main' \
+    'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260419T000000Z bullseye-updates main' \
     > /etc/apt/sources.list
 
-RUN apt-get -o Acquire::Check-Valid-Until=false -q update && apt-get -qy install maven \
+RUN apt-get -q update && apt-get -qy install maven \
    ant \
    git \
    python3-venv
