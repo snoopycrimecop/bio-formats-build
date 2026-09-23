@@ -5,8 +5,6 @@ LABEL maintainer="ome-devel@lists.openmicroscopy.org.uk"
 
 USER root
 
-USER root
-
 RUN printf '%s\n' \
     'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian/20260419T000000Z bullseye main' \
     'deb [check-valid-until=no] http://snapshot.debian.org/archive/debian-security/20260419T000000Z bullseye-security main' \
