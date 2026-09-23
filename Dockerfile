@@ -4,7 +4,14 @@ FROM ${BUILD_IMAGE}
 LABEL maintainer="ome-devel@lists.openmicroscopy.org.uk"
 
 USER root
-RUN apt-get -q update && apt-get -qy install maven \
+
+RUN printf '%s\n' \
+    'deb http://snapshot.debian.org/archive/debian/20260419T000000Z bullseye main' \
+    'deb http://snapshot.debian.org/archive/debian-security/20260419T000000Z bullseye-security main' \
+    'deb http://snapshot.debian.org/archive/debian/20260419T000000Z bullseye-updates main' \
+    > /etc/apt/sources.list
+
+RUN apt-get -o Acquire::Check-Valid-Until=false -q update && apt-get -qy install maven \
    ant \
    git \
    python3-venv
