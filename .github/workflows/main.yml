@@ -1,18 +1,15 @@
 ---
 name: Build
 
-on: 
+on:
   push:
   pull_request:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        jdk: [8, 11]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
       - name: Build
-        run: docker build -t bio-formats-build . --build-arg BUILD_IMAGE=openjdk:25-ea-${{ matrix.jdk }}-jdk-slim-bullseye
+        run: docker build -t bio-formats-build .
